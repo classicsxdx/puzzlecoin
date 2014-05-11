@@ -50,10 +50,10 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
   HiddenServiceDir /var/lib/tor/puzzlecoin-service/
-  HiddenServicePort 77875 127.0.0.1:77875
+  HiddenServicePort 11815 127.0.0.1:11815
 
 The directory can be different of course, but (both) port numbers should be equal to
-your puzzlecoind's P2P listen port (77875 by default).
+your puzzlecoind's P2P listen port (11815 by default).
 
 -externalip=X   You can tell puzzlecoin about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -83,7 +83,7 @@ specify:
 
   ./puzzlecoind ... -discover
 
-and open port 77875 on your firewall (or use -upnp).
+and open port 11815 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
